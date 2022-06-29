@@ -141,13 +141,13 @@ import seaborn as sns
 sns.boxplot(x=df['battery_power'])
 ```
 
-![box_bat](https://github.com/GhifSmile/Mobile_Price_Classification/blob/main/Capture_battery.PNG?raw=true)
+![box_bat](https://github.com/GhifSmile/ProPri/blob/main/images/Capture_battery.PNG)
 
 ```python
 sns.boxplot(x=df['clock_speed'])
 ```
 
-![clck_spd](https://github.com/GhifSmile/Mobile_Price_Classification/blob/main/Capture_clock_spd.PNG?raw=true)
+![clck_spd](https://github.com/GhifSmile/ProPri/blob/main/images/Capture_clock_spd.PNG)
 
 5. Melakukan drop pada sampel yang memiliki nilai outliers dengan menuliskan kode berikut.
 
@@ -170,7 +170,7 @@ df.hist(bins=50, figsize=(20,15))
 plt.show()
 ```
 
-![uni_eda](https://github.com/GhifSmile/Mobile_Price_Classification/blob/main/Capture_UNI_EDA.PNG?raw=true)
+![uni_eda](https://github.com/GhifSmile/ProPri/blob/main/images/Capture_UNI_EDA.PNG)
 
 Dari histogram di atas, terdapat informasi bahwasanya pada tiap label/target price_range jumlahnya tidak berbeda secara signifikan, dengan kata lain, hal tersebut bisa dikatakan proporsional. Jumlah tertinggi ada pada target 3 (biaya sangat tinggi).
 
@@ -232,7 +232,7 @@ plt.legend()
 plt.show()
 ```
 
-![akur_skorVar_vis](https://github.com/GhifSmile/Mobile_Price_Classification/blob/main/Capture_var_penting.PNG?raw=true)
+![akur_skorVar_vis](https://github.com/GhifSmile/ProPri/blob/main/images/Capture_var_penting.PNG)
 
 Terlihat bahwasanya ram merupakan variabel yang sangat penting. Kemudian ambil beberapa variabel penting lainnya dengan tolak ukur relatif berdasarkan spesifikasi, maka diambil beberapa variabel penting, yaitu ram, battery_power, px_width, px_height, mobile_wt, dan int_memory.
 
@@ -351,7 +351,7 @@ plt.title('Perbandingan akurasi model')
 plt.ylabel('Score')
 ```
 
-![akur_mod](https://github.com/GhifSmile/Mobile_Price_Classification/blob/main/Capture_akurasi.PNG?raw=true)
+![akur_mod](https://github.com/GhifSmile/ProPri/blob/main/images/Capture_akurasi.PNG)
 
 ## **Kesimpulan**
 Dari visualisasi yang ada terdapat interpretasi bahwasanya tiap model tidak terlalu berbeda secara signifikan terhadap skor akurasi. Namun, dari ketiga model yang ada, model AdaBoostlah yang paling optimal dengan memberikan skor akurasi di atas 95%. Maka pada kasus klasifikasi rentang harga handphone ini dapat disimpulkan bahwa penggunaan model AdaBoost sangat optimal.
